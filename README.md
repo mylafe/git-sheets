@@ -59,12 +59,13 @@
 	git clean -f    #清理所有未track文件
 	git clean -df   #清理所有未track文件和文件夹, 常用, 但使用前确保新增加的文件或文件夹已add, 否则新创建的文件或者文件夹也会被强制删除
 
-#### 关联GitHub远程仓库（本地到远程）
+#### 关联远程仓库（本地到远程）
 	git remote add origin <remote address>	#在本地工作区目录下按照 Git 提示进行关联
 	git remote rm origin			#解除错误关联
 	git push -u origin master		#第一次将本地仓库推送至远程仓库（每次在本地提交后进行操作）
 	git push origin master			#以后每次将本地仓库推送至远程仓库（每次在本地提交后进行操作）
 	git remote update origin --prune        #更新远程分支，清除已经不存在的远程分支
+	git remote set-url origin <url>         #更新远程仓库地址
 	<remote address>:
 	git@github.com:<username>/<repository>.git
 	https://github.com/<username>/<repository>.git
