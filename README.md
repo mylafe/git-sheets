@@ -335,9 +335,6 @@ git clone awesome-cheatsheets.bundle #重建工程
 #### 使用GitHub
 	fork --> clone --> add/commit/push --> pull request
 
-#### 其他配置
-	git config --global color.ui true	#显示颜色
-
 #### 配置.gitignore文件
 	/<dir name>/			#忽略文件夹
 	*.zip				#忽略.zip文件
