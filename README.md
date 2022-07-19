@@ -352,6 +352,35 @@ git clone awesome-cheatsheets.bundle #重建工程
 	.git/config			#当前工作区的配置文件
 	~/.gitconfig		#当前用户的配置文件
 
+#### 不常用命令
+
+- 更新远程分支，清除已经不存在的分支
+
+	git remote update origin --prune
+	git 设置只输入一次用户名和密码
+	https方式
+
+- 按照如下设置可只输入一次
+
+	记住密码（默认15分钟）：
+	git config --global credential.helper cache
+
+	自己定义时间（一小时后失效）：
+	git config credential.helper 'cache --timeout=3600'
+
+	永久存储密码：
+	git config --global credential.helper store
+
+	取消记住的密码
+	git config --global --unset credential.helper
+
+- git修改ssh和https上传模式
+	git remote set-url origin https://github.com/aimi-cn/AILearners.git
+	git remote set-url origin git@github.com:aimi-cn/AILearners.git
+
+- 远程存在新的提交，本地无法提交
+	git pull mld master --allow-unrelated-histories
+
 #### 附录
 - [廖雪峰Git教程](https://www.liaoxuefeng.com/wiki/896043488029600)
 - [git](https://training.github.com/downloads/zh_CN/github-git-cheat-sheet/)
