@@ -381,3 +381,7 @@ git clone awesome-cheatsheets.bundle #重建工程
 #### 附录
 - [廖雪峰Git教程](https://www.liaoxuefeng.com/wiki/896043488029600)
 - [git](https://training.github.com/downloads/zh_CN/github-git-cheat-sheet/)
+
+#### .gitignore
+
+- 优先级由高到低
